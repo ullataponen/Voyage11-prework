@@ -44,6 +44,13 @@ a {
 
 /***************** 0.3 Sections *******************/
 
+.heading-section {
+  background-image: url("../images/bg-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 /***************** 1. Navigation Bar *******************/
 
 .navigation {
@@ -130,7 +137,7 @@ a {
 }
 
 /*** Desktop navigation menu starts ***/
-@media (min-width: 770px) {
+@media (min-width: 768px) {
 
   .navigation {
   background-color: #40475A;
@@ -167,6 +174,32 @@ a {
 
 /***************** 2. Top Heading *******************/
 
+header {
+  color: #fff;
+  padding: 300px 50px 200px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px black;
+}
+
+header h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-shadow: 1px 1px black;
+}
+
+@media (min-width: 480px) {
+
+  header h1 {
+    font-size: 4rem;
+  }
+
+}
 
 /***************** 3. Features *******************/
 
