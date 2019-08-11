@@ -1,0 +1,181 @@
+/*************************************************
+************* TABLE OF CONTENTS ******************
+
+Colors:
+  #40475A (dark grey navigation background)
+  #49505F (grey navigation background on hover)
+  #646d7c (light grey border element)
+
+
+0. General
+0.1 Headings
+0.2 Containers
+0.3 Sections
+1. Navigation Bar
+2. Top Heading
+3. Features
+4. Blog
+5. Services
+6. Testimonials
+7. Contact
+8. Footer
+
+*************************************************/
+
+
+/***************** 0. General *******************/
+
+* {
+  margin: 0;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/***************** 0.1 Headings *******************/
+
+/***************** 0.2 Containers *******************/
+
+/***************** 0.3 Sections *******************/
+
+/***************** 1. Navigation Bar *******************/
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.navibar {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.navigation ul a {
+  border: 1px solid #646d7c;
+  color: #fff;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.navigation ul a:hover {
+  background-color: #49505F;
+}
+
+.navibar {
+  clear: both;
+  font-size: 1.2rem;
+  max-height: 0;  /* hide navigation bar when not clicked*/
+  transition: max-height .2s ease-out;
+}
+
+.menu-icon {
+  background-color: #40475A;
+  border: 1px solid #646d7c;
+  border-radius: 10%;
+  cursor: pointer;
+  float: right; /* float hamburger menu to right*/
+  margin: 10px;
+  padding: 15px 10px;
+  position: relative;
+}
+
+/*** Hamburger menu icon starts ***/
+.nav-icon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background .2s ease-out;   /* animate icon on click*/
+}
+
+.nav-icon:before {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+}
+
+.nav-icon::after {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+}
+/*** Hamburger menu ends ***/
+
+.menu-btn {
+  display: none;
+}
+
+/* open navibar on click*/
+.menu-btn:checked ~ .navibar { /*selects sibling 'navibar' when menu-btn checked*/
+  max-height: 100%;
+}
+
+/*** Desktop navigation menu starts ***/
+@media (min-width: 770px) {
+
+  .navigation {
+  background-color: #40475A;
+  padding: 10px;
+  }
+
+  .navigation li {
+    display: inline-block;
+    margin: 0 .5%;
+  }
+
+  .navigation li a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .navigation .navibar {
+    max-height: none;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+}
+
+@media (min-width: 990px) {
+  .navigation li a {
+    font-size: 1.2rem;
+  }
+}
+/*** Desktop navigation menu ends ***/
+
+/***************** 2. Top Heading *******************/
+
+
+/***************** 3. Features *******************/
+
+/***************** 4. Blog *******************/
+
+/***************** 5. Services *******************/
+
+/***************** 6. Testimonials *******************/
+
+/***************** 7. Contact *******************/
+
+/***************** 8. Footer *******************/
