@@ -62,11 +62,13 @@ a {
 .navibar {
   list-style: none;
   margin: 0;
+  margin: 10px;
   overflow: hidden;
   padding: 0;
 }
 
 .navigation ul a {
+  background-color: #40475A;
   border: 1px solid #646d7c;
   color: #fff;
   display: block;
