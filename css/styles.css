@@ -275,6 +275,71 @@ header h4 {
 
 /***************** 3. Features *******************/
 
+.feature-section {
+  padding: 2%;
+}
+
+.feature-card {
+  background-color: #F2F2F2;
+  color: #333333;
+  display: inline-block;
+  max-width: 360px;
+}
+
+.feature-text {
+  padding: 0 15px;
+}
+
+.feature-text h2 {
+  padding: 15px 0;
+  text-align: left;
+}
+
+.feature-section .col-4 {
+  padding: 10px;
+}
+
+.color-green {
+  color: #178A27;
+}
+
+.color-blue {
+  color: #1686C1;
+}
+
+.color-gray {
+  color: #666666;
+}
+
+.feature-btn {
+  border-radius: 7px;
+  color: white;
+}
+
+.green-btn {
+  background-color: #178A27;
+}
+
+.green-btn:hover {
+  background-color: #449D44;
+}
+
+.blue-btn {
+  background-color: #1686C1;
+}
+
+.blue-btn:hover {
+  background-color: #31B0D5;
+}
+
+.red-btn {
+  background-color: #852406;
+}
+
+.red-btn:hover {
+  background-color: #C9302C
+}
+
 /***************** 4. Blog *******************/
 
 /***************** 5. Services *******************/
