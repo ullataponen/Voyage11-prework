@@ -394,6 +394,22 @@ header {
 
 /***************** 5. Services *******************/
 
+.service-content p {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.parallax {
+  background-image: url("../images/bg-2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
 /***************** 6. Testimonials *******************/
 
 /***************** 7. Contact *******************/
