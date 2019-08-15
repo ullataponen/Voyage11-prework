@@ -369,6 +369,21 @@ header h4 {
 
 /***************** 4. Blog *******************/
 
+.blog-content h2 {
+  padding: 15px 0;
+}
+
+.blog-content p {
+  padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .blog-content {
+      max-width: 555px;
+      margin: 0 auto 30px;
+  }
+}
+
 /***************** 5. Services *******************/
 
 /***************** 6. Testimonials *******************/
