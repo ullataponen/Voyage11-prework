@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  color: #333333;
+  color: #666666;
   font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.5;
@@ -118,6 +118,35 @@ img {
 }
 
 /***************** 0.1 Headings *******************/
+
+.top-heading {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 300;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px black;
+}
+
+@media (max-width: 480px) {
+  .top-heading {
+    font-size: 4rem;
+  }
+}
+
+.sub-heading {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  text-shadow: 1px 1px black;
+}
+
+.mid-heading {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #D0D0D0;
+}
 
 /***************** 0.2 Containers *******************/
 
@@ -250,7 +279,7 @@ section {
 
   .navigation {
   background-color: #40475A;
-  padding: 10px;
+  padding: 8px;
   }
 
   .navigation li {
@@ -259,8 +288,8 @@ section {
   }
 
   .navigation li a {
-    font-size: 1rem;
-    padding: 10px 20px;
+    font-size: 1.2rem;
+    padding: 15px 20px;
   }
 
   .navigation .navibar {
@@ -274,7 +303,7 @@ section {
 
 @media (min-width: 990px) {
   .navigation li a {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 /*** Desktop navigation menu ends ***/
@@ -284,27 +313,6 @@ section {
 header {
   margin-bottom: 50px;
   padding: 300px 50px 200px;
-}
-
-header h1 {
-  color: #fff;
-  font-size: 3rem;
-  font-weight: 300;
-  padding-bottom: 20px;
-  text-shadow: 2px 2px black;
-}
-
-header h4 {
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 300;
-  text-shadow: 1px 1px black;
-}
-
-@media (min-width: 480px) {
-  header h1 {
-    font-size: 4rem;
-  }
 }
 
 /***************** 3. Features *******************/
