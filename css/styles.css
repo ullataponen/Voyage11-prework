@@ -479,4 +479,66 @@ header {
 
 /***************** 7. Contact *******************/
 
+.contact-img {
+  background-image: url("../images/bg-3.jpg");
+}
+
+@media (min-width: 768px){
+  .contact-section .container {
+    width: 750px;
+    }
+  }
+
+@media (min-width: 992px) {
+  .contact-section .container {
+    width: 970px;
+  }
+}
+
+.contact-section .mid-heading {
+  text-shadow: 2px 2px #000;
+}
+
+.contact-section p {
+  background: rgba(242, 242, 242, 0.4) none repeat scroll 0 0;
+  border-radius: 7px;
+  color: #000;
+  margin: 10px;
+  padding: 20px 40px;
+}
+
+.contact-field input, .text-field textarea {
+  background: rgba(242, 242, 242, 0.4);
+  border: none;
+  border-radius: 7px;
+  color: #000;
+  font-size: 1.1rem;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.contact-field input::placeholder, .text-field textarea::placeholder {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text-field {
+  text-align: left;
+}
+
+.black-btn {
+  background-color: #000;
+  border: 1px solid #D0D0D0;
+  border-radius: 12px;
+  color: #fff;
+  margin-left: 0;
+  padding: 12px 35px;
+}
+
+.black-btn:hover {
+  background-color: #F9F9F9;
+  color: #666666;
+}
+
 /***************** 8. Footer *******************/
