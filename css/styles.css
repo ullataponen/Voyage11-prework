@@ -50,6 +50,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #666666;
 }
 
+h2 {
+  font-weight: 600;
+}
+
 p {
   color: #666666;
   font-size: 1.1rem;
@@ -67,6 +71,13 @@ img {
   height: auto;
 }
 
+/* Same card height for all cards in the row. N.B. doesn't work if col and card data in separate divs */
+/* .row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+} */
+
 .row::after {
   content: "";
   clear: both;
@@ -81,8 +92,24 @@ img {
   padding: 10px;
 }
 
+@media only screen and (min-width: 521px) {
+  /* For mobile: */
+  .col-xs-1 {width: 8.33%;}
+  .col-xs-2 {width: 16.66%;}
+  .col-xs-3 {width: 25%;}
+  .col-xs-4 {width: 33.33%;}
+  .col-xs-5 {width: 41.66%;}
+  .col-xs-6 {width: 50%;}
+  .col-xs-7 {width: 58.33%;}
+  .col-xs-8 {width: 66.66%;}
+  .col-xs-9 {width: 75%;}
+  .col-xs-10 {width: 83.33%;}
+  .col-xs-11 {width: 91.66%;}
+  .col-xs-12 {width: 100%;}
+}
+
 @media only screen and (min-width: 768px) {
-  /* For desktop: */
+  /* For medium screen size: */
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
@@ -97,9 +124,28 @@ img {
   .col-12 {width: 100%;}
 }
 
+@media only screen and (min-width: 992px) {
+  /* For desktop: */
+  .col-md-1 {width: 8.33%;}
+  .col-md-2 {width: 16.66%;}
+  .col-md-3 {width: 25%;}
+  .col-md-4 {width: 33.33%;}
+  .col-md-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
+  .col-md-7 {width: 58.33%;}
+  .col-md-8 {width: 66.66%;}
+  .col-md-9 {width: 75%;}
+  .col-md-10 {width: 83.33%;}
+  .col-md-11 {width: 91.66%;}
+  .col-md-12 {width: 100%;}
+}
+
 .card {
   background-color: #F2F2F2;
-  padding-bottom: 20px;
+}
+
+.card-text p {
+  padding: 20px;
 }
 
 .btn {
@@ -317,23 +363,15 @@ header {
 
 /***************** 3. Features *******************/
 
-.feature-section {
-  padding: 2%;
-}
-
 @media (max-width: 767px) {
   .feature-content {
-      max-width: 360px;
-      margin: 0 auto 30px;
+    max-width: 360px;
+    margin: 0 auto 30px;
   }
 }
 
-.feature-text {
-  padding: 0 15px;
-}
-
-.feature-text h2 {
-  padding: 15px 0;
+.feature-content h2 {
+  padding: 15px 20px 0;
   text-align: left;
 }
 
@@ -381,14 +419,10 @@ header {
   padding: 15px 0;
 }
 
-.blog-content p {
-  padding: 20px;
-}
-
 @media (max-width: 767px) {
   .blog-content {
-      max-width: 555px;
-      margin: 0 auto 30px;
+    max-width: 555px;
+    margin: 0 auto 30px;
   }
 }
 
@@ -397,7 +431,6 @@ header {
 .service-content p {
   color: #fff;
   font-size: 1.5rem;
-  line-height: 1.5;
   text-align: center;
 }
 
