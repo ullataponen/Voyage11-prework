@@ -445,6 +445,31 @@ header {
 
 /***************** 6. Testimonials *******************/
 
+  .testimonial-content {
+    max-width: 260px;
+    margin: 0 auto 30px;
+  }
+
+.testimonial-content h2 {
+  padding: 20px 0 0;
+}
+
+.testimonial-big .card-text {
+  text-align: left;
+}
+
+.testimonial-big h2 {
+  padding: 40px 20px 0;
+}
+
+.testimonial-big p {
+  padding:10px 20px 0;
+}
+
+.testimonial-big .btn {
+  margin-left: 20px;
+}
+
 /***************** 7. Contact *******************/
 
 /***************** 8. Footer *******************/
