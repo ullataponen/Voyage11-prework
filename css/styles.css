@@ -60,7 +60,7 @@ p {
   color: #666666;
   font-size: 1.1rem;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.6em;
   text-align: left;
 }
 
@@ -175,7 +175,6 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 
 /***************** 0.1 Headings *******************/
@@ -243,11 +242,9 @@ section {
   margin-bottom: 50px;
 }
 
-.heading-section {
+.heading-img {
   background-image: url("../images/bg-1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
 
 }
 /***************** 1. Navigation Bar *******************/
@@ -302,7 +299,6 @@ section {
   height: 2px;
   width: 18px;
   position: relative;
-  transition: background .2s ease-out;   /* animate icon on click*/
 }
 
 .nav-icon:before {
@@ -452,7 +448,7 @@ header {
 
 .service-img {
   background-image: url("../images/bg-2.jpg");
-
+  padding: 100px 0;
 }
 
 /***************** 6. Testimonials *******************/
@@ -486,6 +482,7 @@ header {
 
 .contact-img {
   background-image: url("../images/bg-3.jpg");
+  padding: 100px 0;
 }
 
 @media (min-width: 768px){
@@ -525,7 +522,8 @@ header {
 
 .contact-field input::placeholder, .text-field textarea::placeholder {
   color: #000;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
 }
 
 .text-field {
