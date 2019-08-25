@@ -3,7 +3,7 @@
 
 Colors:
   #333333 (paragraph grey)
-  #40475A (dark grey navigation background)
+  #383E4C (dark grey navigation background)
   #49505F (grey navigation background on hover)
   #646d7c (light grey border element)
   #666666 (header grey)
@@ -284,7 +284,7 @@ section {
 }
 
 .navigation ul a {
-  background-color: #40475A;
+  background-color: #383E4C;
   border: 1px solid #646d7c;
   color: #fff;
   display: block;
@@ -356,8 +356,8 @@ section {
 @media (min-width: 768px) {
 
   .navigation {
-    background-color: #40475A;
-    padding: 8px;
+    background-color: #383E4C;
+    padding: 2px 5px 5px;
   }
 
   .navigation li {
@@ -366,7 +366,7 @@ section {
   }
 
   .navigation li a {
-    font-size: 1.2rem;
+    font-size: 1rem; /*1.2*/
     padding: 15px 20px;
   }
 
@@ -381,7 +381,7 @@ section {
 
 @media (min-width: 990px) {
   .navigation li a {
-    font-size: 1.5rem;
+    font-size: 1.3rem; /*1.5*/
   }
 }
 /*** Desktop navigation menu ends ***/
