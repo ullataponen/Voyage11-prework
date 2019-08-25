@@ -254,19 +254,26 @@ section {
 /* Source: W3 School's How TO - Scroll Back To Top Button tutorial: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #topBtn {
   display: none;
+  content; "";
   position: fixed;
-  bottom: 50px;
-  right: 30px;
+  bottom: 100px;
+  right: 80px;
   z-index: 99;
-  font-family: monospace;
-  font-size: 50px;
   border: none;
   outline: none;
   background-color: #333333;
-  color: #fff;
   cursor: pointer;
-  padding: 9px 20px 0 20px;
+  padding: 0;
   border-radius: 100%;
+  height: 0;
+  width: 0;
+}
+
+.cicle-fa {
+  color: #333333;
+  border-radius: 100%;
+  bottom: 50px;
+  right: 30px;
 }
 
 /***************** 1. Navigation Bar *******************/
