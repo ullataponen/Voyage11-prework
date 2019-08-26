@@ -50,20 +50,19 @@ html, body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   color: #666666;
 }
 
 h2 {
   font-weight: 600;
+  padding: 20px 20px 0;
 }
 
 p {
-  color: #666666;
   font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.6em;
-  text-align: left;
 }
 
 a {
@@ -156,6 +155,7 @@ hr {
 
 .card-text p {
   padding: 20px;
+  text-align: left;
 }
 
 .parallax {
@@ -165,10 +165,13 @@ hr {
   background-size: cover;
 }
 
+.white-text {
+  color: #fff;
+}
+
 /***************** 0.1 Headings *******************/
 
 .top-heading {
-  color: #fff;
   font-size: 5rem;
   font-weight: 300;
   padding-bottom: 20px;
@@ -182,14 +185,12 @@ hr {
 }
 
 .sub-heading {
-  color: #fff;
   font-size: 2rem;
   font-weight: 300;
   text-shadow: 1px 1px black;
 }
 
 .mid-heading {
-  color: #fff;
   font-size: 3rem;
   font-weight: 300;
   margin-bottom: 20px;
@@ -199,10 +200,12 @@ hr {
 /***************** 0.2 Containers *******************/
 
 .container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 15px;
+  /* padding-right: 15px;
+  padding-left: 15px; */
+  margin: 0 auto;
+  /* margin-right: auto;
+  margin-left: auto; */
   width: auto;
 }
 
@@ -273,7 +276,7 @@ section {
 }
 
 /***************** 1. Navigation Bar *******************/
-
+/*modified from: Responsive Pure CSS Menu Tutorial (No Javascript) https://www.youtube.com/watch?v=sjrp1FEHnyA&list=PLXXBEF_qt7CoszRjK0Lb4cgvLnWYfT289&index=3&t=0s */
 .navigation {
   position: fixed;
   width: 100%;
@@ -290,7 +293,6 @@ section {
 .navigation ul a {
   background-color: #383E4C;
   border: 1px solid #646d7c;
-  color: #fff;
   display: block;
   padding: 20px;
 }
@@ -385,7 +387,7 @@ section {
   }
 
   .navigation li a {
-    font-size: 1rem; /*1.2*/
+    font-size: 1rem;
     padding: 15px 20px;
   }
 
@@ -400,11 +402,9 @@ section {
 
 @media (min-width: 990px) {
   .navigation li a {
-    font-size: 1.3rem; /*1.5*/
+    font-size: 1.3rem;
   }
 }
-
-
 /*** Desktop navigation menu ends ***/
 
 /***************** 2. Top Heading *******************/
@@ -428,8 +428,13 @@ header {
 }
 
 .feature-content h2 {
-  padding: 15px 20px 0;
   text-align: left;
+}
+
+.feature-btn {
+  border: none;
+  border-radius: 7px;
+  color: #fff;
 }
 
 .color-green {
@@ -438,12 +443,6 @@ header {
 
 .color-blue {
   color: #1686C1;
-}
-
-.feature-btn {
-  border: none;
-  border-radius: 7px;
-  color: white;
 }
 
 .green-btn {
@@ -472,10 +471,6 @@ header {
 
 /***************** 4. Blog *******************/
 
-.blog-content h2 {
-  padding: 15px 0;
-}
-
 @media (max-width: 767px) {
   .blog-content {
     max-width: 555px;
@@ -486,10 +481,8 @@ header {
 /***************** 5. Services *******************/
 
 .service-content p {
-  color: #fff;
   font-size: 1.5rem;
   padding: 0 50px;
-  text-align: center;
 }
 
 #service-img {
@@ -504,16 +497,8 @@ header {
   margin: 0 auto 30px;
 }
 
-.testimonial-content h2 {
-  padding: 20px 0 0;
-}
-
 .testimonial-big .card-text {
   text-align: left;
-}
-
-.testimonial-big h2 {
-  padding: 40px 20px 0;
 }
 
 .testimonial-big p {
@@ -551,14 +536,16 @@ header {
 }
 
 .contact-field input, .text-field textarea {
-  background: rgba(242, 242, 242, 0.4);
-  border: none;
-  border-radius: 7px;
-  color: #000;
-  font-size: 1.1rem;
-  margin: 10px 0;
-  padding: 10px;
-  width: 100%;
+background: rgba(242, 242, 242, 0.4);
+border: none;
+border-radius: 7px;
+color: #000;
+font-family: 'Open Sans', sans-serif;
+font-size: 1.1rem;
+margin: 10px 0;
+padding: 10px;
+resize: none;
+width: 100%;
 }
 
 .contact-field input::placeholder, .text-field textarea::placeholder {
@@ -594,24 +581,17 @@ header {
 
 .footer-text {
   margin-bottom: 20px;
-  text-align: center;
-  font-style: italic;
 }
 
 .footer-text h1 {
-  color: #666666;
-  text-align: center;
   font-style: italic;
   text-shadow: none;
 }
 .footer-text p {
-  color: #666666;
   font-style: italic;
-  text-align: center;
 }
 
 .copyright-text p {
   font-size: 0.8rem;
   margin: 30px auto;
-  text-align: center;
 }
