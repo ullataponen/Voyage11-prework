@@ -8,7 +8,7 @@ This project includes a responsive website template based on the [Conquer Templa
 
 ## How does it work?
 
-The site can be opened on internet browser (preferably Google Chrome or Mozilla Firefox, site is not fully supported in other browsers). Site can be accessed [here] (https://ullataponen.github.io/Voyage11-prework/).
+The site can be opened on internet browser (preferably Google Chrome or Mozilla Firefox, site is not fully supported in other browsers). Site can be accessed [here](https://ullataponen.github.io/Voyage11-prework/).
 
 ## Who will use this project?
 
