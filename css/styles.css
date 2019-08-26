@@ -349,7 +349,6 @@ section {
   position: absolute;
   top: -5px;
 }
-/*** Hamburger menu ends ***/
 
 .menu-btn {
   display: none;
@@ -359,6 +358,22 @@ section {
 .menu-btn:checked ~ .navibar { /*selects sibling 'navibar' when menu-btn checked*/
   max-height: 100%;
 }
+
+/*animate hamburger menu*/
+.menu-btn:checked ~ .menu-icon .nav-icon {
+  background-color: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+/*** Hamburger menu ends ***/
 
 /*** Desktop navigation menu starts ***/
 @media (min-width: 768px) {
