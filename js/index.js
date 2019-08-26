@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // Source: W3 School's How TO - Scroll Back To Top Button tutorial: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -18,3 +20,36 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// THE FOLLOWING CODE ONLY FUNCTIONS ON THE FIRST ITEM OF THE ARRAY
+// Parallax code, modified from: "Smooth Parallax Scrolling" by Kirupa Chinnathambi (https://www.youtube.com/watch?v=LsU6HGwaqIE)
+// window.addEventListener("DOMContentLoaded", scrollLoop, false);
+//
+// var backgroundImg = [document.querySelector("#heading-img"), document.querySelector("#service-img"), document.querySelector("#contact-img")];
+//
+// var xScrollPosition;
+// var yScrollPosition;
+//
+// function scrollLoop(e) {
+//   xScrollPosition = window.scrollX;
+//   yScrollPosition = window.scrollY;
+//
+//   for (var i = 0; i < backgroundImg.length; i++) {
+//     if (isPartiallyVisible(backgroundImg[i])) {
+//       setTranslate(0, yScrollPosition * -0.2, backgroundImg[i]);
+//     }
+//   }
+//   requestAnimationFrame(scrollLoop);
+// }
+// function setTranslate(xPos, yPos, el) {
+//   el.style.transform ="translate3d(" + xPos + ", " + yPos + "px, 0";
+// }
+//
+// function isPartiallyVisible(el) {
+//     var elementBoundary = el.getBoundingClientRect();
+//
+//     var top = elementBoundary.top;
+//     var bottom = elementBoundary.bottom;
+//     var height = elementBoundary.height;
+//
+//     return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+// }

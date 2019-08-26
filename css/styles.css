@@ -230,10 +230,6 @@ section {
   margin-bottom: 50px;
 }
 
-.heading-img {
-  background-image: url("../images/bg-1.jpg");
-}
-
 /***************** 0.4 Buttons *******************/
 
 .btn {
@@ -418,6 +414,10 @@ header {
   padding: 300px 50px 200px;
 }
 
+#heading-img {
+  background-image: url("../images/bg-1.jpg");
+}
+
 /***************** 3. Features *******************/
 
 @media (max-width: 767px) {
@@ -492,7 +492,7 @@ header {
   text-align: center;
 }
 
-.service-img {
+#service-img {
   background-image: url("../images/bg-2.jpg");
   padding: 100px 0;
 }
@@ -525,11 +525,6 @@ header {
 }
 
 /***************** 7. Contact *******************/
-
-.contact-img {
-  background-image: url("../images/bg-3.jpg");
-  padding: 100px 0;
-}
 
 @media (min-width: 768px){
   .contact-section .container {
@@ -588,6 +583,11 @@ header {
 .black-btn:hover {
   background-color: #F9F9F9;
   color: #666666;
+}
+
+#contact-img {
+  background-image: url("../images/bg-3.jpg");
+  padding: 100px 0;
 }
 
 /***************** 8. Footer *******************/
