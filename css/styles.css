@@ -45,7 +45,7 @@ Colors:
 html, body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
- scroll-behavior: smooth;
+  scroll-behavior: smooth;   /* Smooth scrolling */
   text-align: center;
   width: 100%;
 }
@@ -247,10 +247,10 @@ section {
   background-color: #E0E0E0;
 }
 
-/* Source: W3 School's How TO - Scroll Back To Top Button tutorial: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+/* Modified from: W3 School's How TO - Scroll Back To Top Button tutorial: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #topBtn {
   display: none;
-  content; "";
+  content: "";
   position: fixed;
   bottom: 100px;
   right: 80px;
