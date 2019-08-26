@@ -4,11 +4,11 @@ This is Chingu Voyage 11 Tier 1 Pre-Work solo project.
 
 ## What does it do?
 
-Once ready, this project will include a responsive website template.
+This project includes a responsive website template based on the [Conquer Template](https://www.free-css.com/free-css-templates/page196/conquer).
 
 ## How does it work?
 
-The site can be opened on internet browser.
+The site can be opened on internet browser (preferably Google Chrome or Mozilla Firefox, site is not fully supported in other browsers). Site can be accessed [here] (https://ullataponen.github.io/Voyage11-prework/).
 
 ## Who will use this project?
 
